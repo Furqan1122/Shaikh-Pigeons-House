@@ -1,0 +1,89 @@
+
+.body-pro{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.img-spacing{
+ margin-top: 0.75rem;
+ margin-bottom: 0.75rem;
+ margin-right: 0.5rem;
+ margin-left: 0.5rem;
+}
+  
+  a{
+      text-decoration: none;
+  }
+  
+  
+  a:hover {
+    color: red;
+  
+  }
+  
+  h1:hover {
+   
+    color: Blue;
+    text-shadow: 1px 1px black;
+  }
+  
+  
+  img {
+    height: 300px;
+  }
+  .logo{
+      height: 50px;
+      padding-left: 5%;
+  
+  }
+  
+  h1 {
+    
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    color: red;
+    font-size: 180%;
+  }
+.papa-pic{
+    padding-left: 8%;
+}  
+  h2 {
+    -webkit-text-fill-color: cyan;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  h3 {
+    -webkit-text-fill-color: gold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  hr {
+    border-top: 2px dashed black;
+  }
+  
+  /*                         for the image sections            */
+  
+  main{
+    margin-left: 5%;
+  }
+  
+  .box{
+    display: inline-block;
+    border-radius: 15px;
+    width: 200px;
+    height: 320px;
+  }
+  img:hover{
+    transform: scale(2,2);
+    transition: 3s transform;
+  
+  }
+  
+
+.navbar-brand{
+    font-weight: bold;
+    font-family: 'IM Fell English SC', serif;
+}
