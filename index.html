@@ -1,317 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- font awaisom  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rubik+Iso&display=swap" rel="stylesheet">
+<link rel="icon" href="images/footer-img.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>  Shaikh Pigeons House</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <!-- top bar for 900 screen  -->
+       <div class="top-bar-sm-size">
+         <form class="d-flex " role="search">
+        <i class="fa fa-whatsapp search-btn-nav-1" aria-hidden="true" onclick= whatsapplink()> </i>
+         <i class="fa fa-facebook search-btn-nav-1" aria-hidden="true" onclick= facebooklink()></i>
+         <i class="fa fa-youtube search-btn-nav-1" aria-hidden="true" onclick= youtubelink()></i>
+         <i class="fa fa-instagram search-btn-nav-1" aria-hidden="true" onclick= instagramlink()></i>
+        <i class="fa fa-search search-btn-nav-1" aria-hidden="true" onclick= searchnavbar()></i>
+      </form>
+       </div>
 
-<head>
-  <!-- style sheet of css -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="icon" href="photos/iconlink.png">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
 
 
+    <!-- Navigation BAr  -->
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-
-
-
-  <title>Shaikh Pigeons House</title>
-</head>
-
-<!--  nav bar -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Shaikh Pigeons House</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-setting">
+    <div class="container-fluid">
+      <!-- tital  -->
+    <a  class="navbar-brand" href="index.html">Shaikh Pigeons House</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        
         </li>
-        
+
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="cargo.html">cargo Service</a>
+          <a class="nav-link" href="#">Cargo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="contect us.html">Contect us</a>
+          <a class="nav-link" href="#">Contect Us</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link " href="history.html">History</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Photos
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallary
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="Teddy-photo.html">Teddy Pigeons</a></li>
-            <li><a class="dropdown-item" href="Royal-teddy-photo.html">Royal Teddy</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li><a class="dropdown-item" href="other-pigeons.html">Other Pigeons</a></li>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">
+                    <img class="teddy-eye-navbar" src="images/main/teddy-eye-navbar.jpg" alt="">
+                    &nbsp; Teddy Pigeons</a>
+                <a class="dropdown-item" href="#">
+                    <img class="teddy-eye-navbar" src="images/main/golden-eye-navbar.jpg" alt="">
+                    &nbsp; Golden Pigeons</a>
+                <a class="dropdown-item" href="#">
+                        <img class="teddy-eye-navbar" src="images/main/sialkoti-eye-navbar.jfif" alt="">
+                        &nbsp; Sialkoti Pigeons</a>
+                <a class="dropdown-item" href="#">
+                            <img class="teddy-eye-navbar" src="images/main/rampuri-eye-navbar.jfif" alt="">
+                            &nbsp; Rampuri Pigeons</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="teddy-eye-navbar" src="images/main/imam-din-eye-navbar.jpg" alt="">
+                                &nbsp; Imam-Din Pigeons</a>
+                        <a class="dropdown-item" href="#">
+                                    <img class="teddy-eye-navbar" src="images/main/kamagar-eye-nabvar.jfif" alt="">
+                                    &nbsp; Kamagar Pigeons</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-success font-weight-bold text-center" href="#">Other Pigeons</a>
+              </div>
+        </li>
+
+               <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Videos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
+        
+ 
+        
+
+        
+
+
+
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">
-          Search
-        </button>
+      <div id="right-nav-hidden">
+      <form class="d-flex " role="search">
+        <i class="fa fa-whatsapp search-btn-nav" aria-hidden="true" onclick= whatsapplink()> </i>
+         <i class="fa fa-facebook search-btn-nav" aria-hidden="true" onclick= facebooklink()></i>
+         <i class="fa fa-youtube search-btn-nav" aria-hidden="true" onclick= youtubelink()></i>
+         <i class="fa fa-instagram search-btn-nav" aria-hidden="true" onclick= instagramlink()></i>
+        <i class="fa fa-search search-btn-nav" aria-hidden="true" onclick= searchnavbar()></i>
       </form>
+      </div>
+
     </div>
   </div>
 </nav>
 
-<!-- content -->
+       <!-- hide after click on cross  -->
+       <div id="hidden-call-whatsapp">
+      <!-- Call button at bootom right corner  -->
+
+        <div class="call-btn " onclick="callmelink()">
+          <button class="call-me-bottom bg-warning">
+               <i class="fa fa-phone" aria-hidden="true"></i>
+          </button>
+      </div>
 
 
-  
-  <body>
- 
-    <center>
-      <table class="logo-h1">
-        <tr>
-          <td>
-            <img class="logo" src="photos/crope3.png" alt="">
-          </td>
-          <td>
+              <!-- whatsapp button at bootom right corner  -->
+              <div class="whatsapp-btn ">
+                
+                    <button class="whatsapp-me-bottom bg-success" onclick="whatsapplink()">
+                        <i class="fa fa-whatsapp text-white" aria-hidden="true"></i>
+                   </button>
+                
 
-            <h1>Shaikh Pigeons House</h1>
-          </td>
-    
-        </tr>
-      </table>
-    </center>
-    
-    
-    
-    <img class="papa-pic" src="photos/Shaikhaslam.png" alt="">
-    
+            </div>
+        
+           <!-- whatsapp button at bootom right corner  -->
+                     <div class="cross-btn ">
+                        <button class="cross-bottom bg-transparent" onclick="crossfunc()">
+                          <img class="cross-btn-img" src="images/main/cross.png" alt="">
+                        </button>
+                    </div>
+                </div>
 
 
-    <div class="body-pro">
     
-    <h3>Introduced By "Shaikh Muhammad Aslam", since (1993)</h3>
-    <p>
-    <ul>
-      <li>Best Pigeons Seller in Pakistan.</li>
-      <li>We deal with all kind of Pure blood lines</li>
-      <li>One of the best Bloods are; <br>
-        <ol>
-          <li>Teddy Pigeons (Chaydhary Sakhi Teddy)</li>
-          <li>Teddy Pigeons (Mehro Wala, Saitho wala, ROYAL)</li>
-          <li>Golden Pigeons</li>
-          <li>Sialkoti Pigeons</li>
-          <li>Kamagar Pigeosn (All Kinds)</li>
-          <li>Rampuri Pigeons</li>
-          <li>Sialkoti Pigeons</li>
-          <li>Ali wala Pigeons</li>
-          <li>Dab wala Pigeons</li>
-          <li>Imam Din Pigeons</li>
-          <li>lakha Pigeons</li>
-          <li>Zard ankha Pigeons</li>
-        </ol>
-    
-      </li>
-    </ul>
-    <img src="photos/crope2.png" alt="">
-
-    <h3>We have done almost 500+ cargo in the differst cites of Pakistan.</h3> 
-    <a href="cargo.html">List of some Cargoes</a>
-    
-    
-    
-    <p>
-      <hr>
-      <center>
-        <h2>History of Pigeons in the World</h2>
-      </center>
-      <hr>
-      In this article you can read about Pigeon History in Sub-Continent.<br>
-      Domestic pigeons have existed in India for centuries. Trade-in Pigeons were reported between China and India through
-      many writers’ famous Silk-Route.<br>
-      However, Mughals introduced flying pigeon breeds in India, the Descendents of Halaku Khan and Changez Khan, from
-      Central Asia. <br>
-      It also firmly believes that high and low flyers have developed from tumbler performing Pigeons by selecting birds
-      that lacked tumbling and somersaulting.<br>
-      Most of the older high fliers pigeons did somersault but know a day’s high flyer; pigeons do not tumble and somersault
-      at all.<br>
-    
-      <hr> <strong>Moghal King’s Love for Pigeons:</strong><br>
-      History tells us that the first Moghal Emperor Zaheer Babar(1483-1530), King Umer Sheikh Mirza, was an ardent Pigeon
-      Fancierbr
-      who died inspecting his Pigeon Loft at Akshi in Farghana.<br>
-      That Pigeon fancy was very popular, and quite a fad in the past is evident from the fact no fort and palace of any
-      ruler and no mansion of any elite in Iran and Afghanistan was without pigeon-house during those times, and afterward
-      during Mughal
-      rule in India.<br>
-      It was such a fad that, following Mughal Emperors, the local Hindu Rajas and Maharajas and Nawabs adopted it, and the
-      elite also took it up.<br>
-      How many Breeds/Strains of the endurance flier introduced from Iran, including other places in Central Asia, has
-      survived and has also increased
-      in Indo-Pakistan sub-Continent.<br>
-      The Great Mughal Emperor Jalal Din Muhammad Akbar calls pigeons flying as Ishq Bazi or love affair.<br>
-      At the same time, this hobby provides the commoner with a dull kind of amusement.<br>
-      His Majesty so wisely considers it as a study. He utilizes this occupation as a means and method to induce obedience
-      in the wayward worldly men and uses it for creating harmony and friendship.<br>
-      His Majesty’s amusement derives from pigeons’ tumbling. Flying is comparable to the ecstasy and satisfaction that a
-      devoted Dervish or holy man derives from holding communion with the God Almighty, and he praises him for the wonders
-      of his
-      creation. <br>
-      Therefore, he pays so much attention to this hobby with a higher motive than only to derive worldly pleasure.<br>
-      His Highness’s pigeons have reached a high perfection stage as Kings of Iran and Turan are gifting excellent
-      pigeons.<br>
-      The trader also brings outstanding pigeons in large numbers. His Majesty was very fond of pigeons in his childhood,
-      but
-      afterward, he left this hobby altogether when he grew older and wiser.<br>
-      However, he took it up again in his middle age as he became more intelligent and mature.<br>
-    
-      <hr><strong>MOHNA ROYAL Pigeons</strong><br>
-      A well trained blue female, previously belonging to Khan-e-Azam Kokaltash, fell to his hand.<br>
-      It has been further trained by him to become the best champion amongst the Royal pigeons and has been named “Mohna,”
-      <br>
-      which has acquired great fame. It has produced such very fine and excellent pigeons like the weeper, the fairy, the
-      diamond, and the aloe royal.<br>
-      These pigeons have obtained the finest pigeons that in quality excel those of Sultan Umer Sheikh Mirza and Sultan
-      Hasan Mirza, pushing them to oblivion.<br>
-      Indeed improvements made by His Majesty have not only astonished, but they have also compelled Iran and Turan’s
-      fanciers to abandon their old hackneyed techniques to start from the beginning.<br>
-      Previously pigeons were paired indiscriminately. But His Highness thinks that pairing is essential and, in this way,
-      bred choice birds.<br>
-      The usual method is to keep a male and female pigeon together for five or six days to acquaint themselves when they
-      become so familiar that they would recognize each other even after a long separation.<br>
-      The hen generally lays eggs from eight to twelve days after mating, or more if she is ill or not yet mature.<br>
-      Pigeons start laying eggs in September and October and separate from each other in February and March.<br>
-      A hen lays two eggs but sometimes only one. The cock sits on the eggs during day time and hen during the night;<br>
-      thus, they keep these warm. In winter, they incubate eggs for twenty days but seventeen or eighteen days if the
-      weather is warm.<br>
-      For about six days, pigeons feed their young ones with pigeon milk, which means the grain is reduced to pulp in the
-      parents’ crops.<br>
-      Afterward, they feed them with grain somewhat softened in their crops.<br>
-      They continue for a month and, as soon they see that the young ones can pick up grain, they separated from their
-      parents.<br>
-      Eggs, and sometimes young ones, are placed under other pigeons for rearing.<br>
-      Homebred young ones trained. Some of these are in on a string till they get stronger and familiarise themselves with
-      their surroundings.<br>
-      Afterward, pigeons get only one-third to one-fourth of their daily ration of grain. When accustomed to hunger, they
-      are gradually allowed to take flights.<br>
-      They flew forty times a day. When they have shed eight out of the ten outer wing feathers, the keepers no longer allow
-      them to fly but make them rest.<br>
-      After two months, pigeons get new feathers and get very strong. They are then let out again. This is the best time for
-      showing their skill.<br>
-      As soon as pigeons learn to perform the competitions, they are presented to His Majesty for inspection and kept for
-      four months in readiness
-      to show their skill.
-      <br>
-      <hr>
-      <center>
-        <h3><strong>Pigeon History In Pakistan </strong></h3>
-      </center>
-      <hr>
-      There were two main centers of high flier fanciers in Pakistan before it came into existence in 1947, Sialkot and
-      Kasur.<br>
-      The breeds and strains most prevalent in the two cities differed quite a lot, both in the color of body feathers and
-      eye.<br>
-      However, all the two cities’ breeds originally belonged to the United Provinces and Central Province of India.<br>
-      In these two Indian Province, these performing pigeons were introduced by Moghal, mostly from Iran or other Central
-      Asia parts.<br>
-      Refugees migrating after 1947 from the Indian part of Punjab and the United and Central Provinces brought some breeds
-      that added to the breeds and strains constituting the high fliers that existed in Pakistan at that time—brought even
-      earlier
-      birds to Pakistan from other parts of India.<br>
-      Especially from Feroz Pur and from Jalal Abad from the loft of Late Nawab Saadat Ali Khan.<br>
-      In Pakistan, competitions held in the early part of the last Century in the winter months and most high fliers
-      belonged mainly to such breeds as Black, Red, Yellow, Ash, etc.,<br>
-      in selves, badges, and some mottles. Breeds that also contribute to most of the present-day English Flying
-      Tippler.<br> Like the English Flying Tippler, high fliers in India developed from its runner type, the tumbler, which
-      also evolved another
-      kind of performer, the Roller.<br>
-      When competitions were later shifted to the comparatively warmer month of October and then to September, these
-      breeds/strains were discarded and replaced with Sialkot breeds, mostly prints, of the high flier as these could
-      withstand and cope with
-      to do so.<br>
-      The major cause of change in the flying season was improved birds and their flying ability.<br>
-      Winter days are becoming too short for the improved birds, and night flying unknown at that time.<br>
-      However, Breeds/Strains mentioned earlier had to be discarded as even the improved and the best birds of the
-      Breeds/Strains that were popular failed to perform well under warmer conditions.<br>
-      Must have taken efforts to acclimatize these old breeds/strains in hand but without much success.<br>
-      With time the quality of birds improved further.<br>
-      Therefore, flying competition season had to be shifted once again to March and April, months much warmer than October
-      and September with comparatively longer day-length.<br>
-      After that, competitions started in May and June. , the hottest and the driest part of the year, mainly from the 28th
-      of May to the 9th of June.<br>
-      This period also covers the most extended day length.<br>
-      Such a change brought a complete change in the breeds/strains of the high flier, and Sialkot breeds/strains replaced
-      with Kasur breeds/strains of the duration fliers that could withstand high temperatures low humidity better as
-      compared to the
-      former breeds.<br>
-      In Kasur,<br>
-      competitions are held during summer months for a long; in fact, perhaps from the very start of the fancy in that
-      city.<br>
-      At present, not a single bird of the breeds like the Reds, Blacks, Yellow, Ash, etc. Selfs, so popular before the
-      creation of Pakistan, are seen amongst the birds entering the competitions.<br>
-      The proportion of lighter colored breeds/strains belonging to Sialkot entered in summer competitions is hardly 1%.<br>
-      What is more, even Sialkoti fanciers, who disliked Kasuri birds and never even cared to look at them in the past, have
-      now shifted to the latter breeds/strains almost completely, in pure form or the form of their hybrids with Kasuri
-      breeds/strains.<br>
-      Over 90% of the present competition birds comprise Kasuri breeds/strains in Sialkot itself during the last three or
-      four years, and in the Districts where preferred Sialkoti birds in the past.<br>
-      In Pakistan,<br> Kasuri breeds/strains started replacing Sialkot breeds/strains in the late fifties or early
-      sixties.<br>
-      The above changes have accrued because of genetic differences in the birds that could do well only in winter.<br>
-      The ancient past’s cloured selves, the lighter colored Sialkot breeds/strains, mostly prints did well comparatively
-      milder weather conditions.<br>
-      Kasuri strains/breeds are currently popular due to their much better tolerance to high temperatures and very low
-      humidity.<br>
-      Some of Sialkot breeds/strains, such as Sundray, Wehshi, Border Wally, Tunia, Motion Wally Choohay, Ghalodoo, Daska
-      Wallay, are equally hardy and fly very well during hot, dry summer.
-      <br>
-      Pigeon History In Sub-Continent <br>
-      Pigeon History In Sub-Continet Low Flyer <br>
-      Low flyer pigeons called Daangi Wallay, Chatri Walley, and Patti walay in Pakistan.<br>
-      This type of pigeons is so popular in rural areas of Province Punjab and Sindh. These pigeons were unknown in the big
-      city in Pakistan till very recently. These
-      pigeons were brought by Muslims migrating to Pakistan.<br>
-      Mostly from the Feroze Pur district of India after partition. Although highly popular elsewhere, these could not gain
-      popularity in main cities due mainly to the major parties’ ban on them.<br>
-      This type of duration flier, which, barring kitting, is flown under rules very similar to those applicable to the
-      English Flying Tippler, and mostly restricted to the rural area in the past, is quite popular nowadays in cities of
-      the Sindh
-      Province, including Karachi.<br>
-    </p>
+     <!-- first container for pic and text inline  -->
+    <div class="first-container">
+      <div class="main-page-pic">
+        <img src="images/main/main-logo.png" alt="Main Page Picture" style="width: 100%;">
+      </div>
+      <div class="main-pic-text">
+        <p class="main-txt-1">Shaikh Pigeons House</p>
+        <p class="main-txt-2">Introduced By "Shaikh Muhammad Aslam", since (1993)</p>
+      </div>
+    </div>
 
 
+
+      <div class="index-all-content">
+    <!-- first container text with read me -->
+       <div class="about-us-main-paragraph" style="margin-top: -3%;">
+        <p class="intro-paragraph">
+          Our high flyer pigeons are carefully selected from the best bloodlines and are bred for superior flying ability,
+           endurance, and agility. We have a variety of breeds available, including racing pigeons, tumbling pigeons,
+            and tippler pigeons, each with their unique characteristics and traits. 
+            <button id="read-more-btn-1"  onclick="showPara()">Read more</button> <br>
+
+            <div id="hidden-intro" style="display: none; text-align: justify; ">
+               At our business, we believe that the key to success lies in providing excellent care and nutrition for our birds. 
+              We use only the finest quality feed and supplements to ensure that our pigeons are in peak physical condition,
+              and we provide them with spacious, clean living quarters that are regularly maintained and sanitized. <br>
+
+              Our team of experts is highly knowledgeable and experienced in all aspects of pigeon breeding and care, and we are always available to answer 
+               any questions or provide guidance to our customers. Whether you are a seasoned breeder or just starting out, we are here to help you succeed 
+               in your pigeon breeding endeavors.
+
+                  <ul>
+                    <li>Best Pigeons Seller in Pakistan.</li>
+                    <li>We deal with all kind of Pure blood lines</li>
+                  </ul>
+                  <strong>One of the best Bloods are;</strong> 
+
+                  <ol>
+                    <li>Teddy Pigeons (Chaydhary Sakhi Teddy)</li>
+                    <li>Teddy Pigeons (Mehro Wala, Saitho wala, ROYAL)</li>
+                    <li>Golden Pigeons</li>
+                    <li>Sialkoti Pigeons</li>
+                    <li>Kamagar Pigeosn (All Kinds)</li>
+                    <li>Rampuri Pigeons</li>
+                    <li>Sialkoti Pigeons</li>
+                    <li>Ali wala Pigeons</li>
+                    <li>Dab wala Pigeons</li>
+                    <li>Imam Din Pigeons</li>
+                    <li>lakha Pigeons</li>
+                    <li>lakha Pigeons</li>
+                    <li>lakha Pigeons</li>
+
+                  </ol>l
+                  
+
+
+               Thank you for considering our business for your high flyer pigeon needs. We look forward to the opportunity to work with you and provide you with 
+                      the best quality pigeons and services available. <br>
+                    <button id="read-less-btn-1"  onclick="hidePara()">Read less</button> <br>
+
+   
+                </div>
+
+        </p>
+       </div>
+
+       <!-- cards  -->
+
+    <!-- cards  -->
+       <h3 class="cards-heading">Saith wala Teddy</h3>
+      <div class="my-cards">
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card ">
+              <img class="card-img" src="images/CARDS/1.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Saith wala Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/2.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Teddy with Yarkan Eyes</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/3.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Teddy Outclass Pair</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/4.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Saith wala Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+
+
+
+      </div>
+
+
+    <!-- cards  -->
+       <h3 class="cards-heading">Chaudhary Sakhi Teddy</h3>
+      <div class="my-cards">
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card ">
+              <img class="card-img" src="images/CARDS/ch/chaudhary1.jpg" alt="chaudhary wala Teddy" style="width: 100%;">
+              <p class="card-heading">Chaudhary Sakhi Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/ch/chaudhary2.jpg" alt="chaudhary wala Teddy" style="width: 100%;">
+              <p class="card-heading">Chaudhary Sakhi Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/ch/chaudhary3.jpg" alt="chaudhary wala Teddy" style="width: 100%;">
+              <p class="card-heading">Chaudhary Sakhi Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/ch/chaudhary4.jpg" alt="chaudhary wala Teddy" style="width: 100%;">
+              <p class="card-heading">Chaudhary Sakhi Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+
+
+
+      </div>
+
+
+
+          <!-- cards  -->
+       <h3 class="cards-heading">Unique Sakhi Teddy</h3>
+      <div class="my-cards">
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/royal-black/2022-09-20-17-02-04-681.jpg" alt="Black Teddy" style="width: 100%;">
+              <p class="card-heading">Unique Color Teddy</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/royal-black/2022-09-22-15-07-47-850.jpg" alt="Black Teddy" style="width: 100%;">
+              <p class="card-heading">Black Teddy</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/royal-black/2022-11-24-17-25-21-807.jpg" alt="Black Teddy" style="width: 100%;">
+              <p class="card-heading">Royal Teddy</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/royal-black/2023-02-11-18-22-26-454.jpg" alt="Black Teddy" style="width: 100%;">
+              <p class="card-heading">Original Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+
+
+
+      </div>
+
+
+
+          <!-- cards  -->
+      <div class="my-cards">
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card ">
+              <img class="card-img" src="images/CARDS/1.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Saith wala Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/2.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Teddy with Yarkan Eyes</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/3.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Teddy Outclass Pair</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+           <!-- card no 1  -->
+           <a href="">
+            <div class="card">
+              <img class="card-img" src="images/CARDS/4.jpg" alt="Saith wala Teddy" style="width: 100%;">
+              <p class="card-heading">Saith wala Teddy Pigeons</p>
+              <a href="">
+                <i class="fa fa-home font-weight-bold text-dark" aria-hidden="true"><span> Order Now</span></i>
+              </a>
+            </div>
+           </a>
+
+
+
+
+      </div>
+    
+    
+      </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+
+  <div class="footer-test">
+
+
+ <div class="footer-pic">
+    <img class="w-100
+     pr-3" src="images/footer-img.png" alt="Footer logo image" >
+  </div>
+  <div class="footer-contect-us">
+    <p class="footer-contect-heading">Contect us</p>
+    <button class="footer-contect-btns" onclick="callmelink()">
+     <i class="fa fa-phone" aria-hidden="true"></i>
+    </button>
+
+        <button class="footer-contect-btns"onclick="whatsapplink()">
+     <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </button>
+
+        <button class="footer-contect-btns"onclick="facebooklink()">
+     <i class="fa fa-facebook" aria-hidden="true"></i>
+    </button>
+
+            <button class="footer-contect-btns"onclick="youtubelink()">
+     <i class="fa fa-youtube" aria-hidden="true"></i>
+    </button>
+
+            <button class="footer-contect-btns" onclick="instagramlink()">
+           <i class="fa fa-instagram" aria-hidden="true"></i>
+         </button>
+    <br> <br>
+
+    <i class="fa fa-location-arrow" aria-hidden="true" >
+      <span class="text-dark"> &nbsp; 26-S-5, New Shalimar Colony Multan Road, Lahore, Pakistan</span></i>
+       <div class="payment-methods">
+      <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+      <i class="fa fa-bank" aria-hidden="true"></i>
+      <i class="fa fa-id-card" aria-hidden="true"></i>
+      <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+      <i class="fa fa-cc-amex" aria-hidden="true"></i>
+       </div>
 
 </div>
+  <div class="footer-img-galary">
+
+    <div class="footer-img-glry w-100">
+      <div class="footer-galary-r1">
+            <img src="images/saith/119241678_657548345158062_2740872762250560360_o.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/saith/2020-12-06-11-33-29-834.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/saith/2020-12-17-12-20-55-417.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/saith/2021-01-23-11-53-17-841.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+    </div>
+
+        <div class="footer-img-glry w-100">
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/ch/chaudhary1.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/ch/chaudhary2.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/ch/chaudhary3.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/ch/chaudhary4.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+    </div>
+
+        <div class="footer-img-glry w-100">
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/royal-black/2022-09-20-17-02-04-681.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/royal-black/2022-09-22-15-07-47-850.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/royal-black/2022-11-24-17-25-21-807.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+      <div class="footer-galary-r1">
+            <img src="images/CARDS/royal-black/2023-02-11-18-22-26-454.jpg" alt="saith wala teddt footer" width="100%">
+      </div>
+    </div>
+  </div>
 
 
 
+  </div>
+</div>
+  <div class="footer-reserved">
+    <p>
+        ©1998-© <span class="current-year-footer"></span> 
+        <a href="https://www.facebook.com/shaikh.pigeonshouse">Shaikh Pigeons House</a>
+         All Rights Reserved    </p>
+  </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+  </body>
 </html>
